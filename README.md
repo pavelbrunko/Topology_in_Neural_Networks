@@ -29,9 +29,9 @@ The repo is separated into few parts - each part for one dataset and Jupiter Not
 
                         - layerN_barcode.png - barcode graph for each layer in each epoch
 
-                    barcode_data.json - JSON file with data about barcodes separated with epochs and layers of NN
+                    - barcode_data.json - JSON file with data about barcodes separated with epochs and layers of NN
 
-                    barcode_evaluation.json - JSON file with barcodes' evaluation also separated with epochs and layers of NN 
+                    - barcode_evaluation.json - JSON file with barcodes' evaluation also separated with epochs and layers of NN 
 
                 - loss_and_rmse_architecture_DataAmountn.png - graph with train and test loss functions and Root Mean Square Error (RMSE) metric
 
