@@ -1,4 +1,5 @@
 import json
+import os
 
 import matplotlib.pyplot as plt
 
@@ -226,3 +227,42 @@ class PlotResults():
         plt.grid(True)
 
         plt.show()
+
+
+def save_model_metrics_to_json(json_path: str, model_name: str, accuracy: float, precision: float, recall: float, f1_score: float) -> None:
+    ''' 
+    This metod saves obtained models metrics into the JSON file
+    Params:
+    json_path - path to JSON file to store the data;
+    model_name - models name as a key from saving data;
+    accuracy - models classification metric;
+    precision - models classification metric;
+    recall - models classification metric;
+    f1_score - models classification metric.
+    Output: None
+    '''
+    # Create a dict with model's metrics for saving im JSON file
+    model_metrics = {
+        model_name: {
+            'accuracy': accuracy,
+            'precision': precision,
+            'recall': recall,
+            'f1_score': f1_score
+        }
+    }
+
+    # Save models metrics into JSON file
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as file:
+            data = json.load(file)  # Load data from file
+
+        # Add new data
+        data.append(model_metrics)
+
+        # Write new updated data into JSON file 
+        with open(json_path, "w", encoding="utf-8") as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+
+    else:
+        with open(json_path, 'w', encoding='utf-8') as file:
+            json.dump(model_metrics, file, ensure_ascii=False, indent=4)
