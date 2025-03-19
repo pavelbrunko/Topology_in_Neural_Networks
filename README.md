@@ -5,7 +5,7 @@ This repo created to study neural networks' structure using TDA methods. The mai
 
 # Project structure
 
-In this repo you can find a few folders with the names of dataset, on which we trained neural networks. Each such folder contains some Jupiter Notebooks with next pipelines: data preprocessing (not presented in such dataset as CIFAR-10 and MNIST), getting optimal NN hyperparameters, extracting "barcodes" from NNs weights and plotting the results. All the data structure we obtained from each experiment is described below.
+In this repo you can find a few folders with the names of datasets, on which we trained neural networks. Each such folder contains some Jupiter Notebooks with next pipelines: data preprocessing (not presented in CIFAR-10 and MNIST datasets), getting optimal NN hyperparameters, extracting "barcodes" from NNs weights and plotting the results. All the data structure we obtained from each experiment is described below.
 
 
 # Output data structure
