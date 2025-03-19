@@ -2,6 +2,8 @@
 
 This repo created to study neural networks' structure using TDA methods. The main aim of this project is to study the NNs behaviour while training it on "small" datasets. To study the NNs structures while training we used TDA methods to obtain Betty's numbers (as called as "barcodes") from NNs weights (to obtain this numbers we used eXplain-NNs library - https://github.com/aimclub/eXplain-NNs). From Betty's numbers we calculated such metrics as mean life-time of homologies and persistent entropy in NNs structure.  The project is still in developing stage.
 
+Also in the root folder there is a plot_results.py file with the main methods to plot the results.
+
 
 # Project structure
 
